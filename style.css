@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(to right, rgb(80, 4, 193), rgb(129, 89, 179));
+    color: rgb(207, 207, 207);
+    text-align: center;
+    margin: 0;
+	width: clamp(100px, 100%, 1900px);
+    padding-top: 40px;
+}
+#header{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: fantasy;
+    line-height: 60px;
+}
+#textBox{
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 250px;
+    height: 30px;
+}
+#textBox:hover{
+    line-height: 40px;
+    background-color: black;
+    transition: all 3s ease-out;
+}
+#textBox:focus{
+    line-height: 40px;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid rgb(21, 222, 233);
+    transition: all 1s;
+}
+#c{
+    line-height: 40px;
+    font-size: 20px;
+}
+#f{
+    font-size: 20px;
+}
+#cChk{
+    cursor: pointer;
+}
+#fChk{
+    cursor: pointer;
+}
+#sButton{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid rgb(0, 0, 0);
+    height: 36px;
+    width: 140px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+@keyframes example {
+    20% { transform: rotate(15deg); } 
+   40% { transform: rotate(-10deg); } 
+   60% { transform: rotate(5deg); } 
+   80% { transform: rotate(-5deg); } 
+   100% { transform: rotate(0deg); }
+  }
+#sButton:hover{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#output{
+    line-height: 90px;
+    font-size: 25px;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 8px 17px;
+}
